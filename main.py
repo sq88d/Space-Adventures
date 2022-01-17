@@ -313,25 +313,10 @@ def game_over():
 
             # кнопки
             button_game_over1 = Button(320 * GAME_COEF, 50 * GAME_COEF,
-                                       SLATE_BLUE, DARK_SLATE_BLUE)
-            button_game_over2 = Button(320 * GAME_COEF, 50 * GAME_COEF,
-                                       SLATE_BLUE, DARK_SLATE_BLUE)
+                                       PURPLE, INDIGO)
 
             button_game_over1.draw(WIDTH - 400 * GAME_COEF,
-                                   HEIGHT - 200 * GAME_COEF, 'Play')
-            button_game_over2.draw(WIDTH - 400 * GAME_COEF,
                                    HEIGHT - 150 * GAME_COEF, 'Quit')
-
-            # активация start_game
-            if WIDTH - 400 * GAME_COEF < mouse[
-                0] < WIDTH - 400 * GAME_COEF + 350 * GAME_COEF and HEIGHT - 200 * GAME_COEF < \
-                    mouse[
-                        1] < HEIGHT - 200 * GAME_COEF + 50 * GAME_COEF and \
-                    click[0] == 1:
-                if sounds_on:
-                    pygame.mixer.Sound.play(button_sound)
-
-                stopped = False
 
             # активация quit
             if WIDTH - 400 * GAME_COEF < mouse[
